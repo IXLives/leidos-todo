@@ -1,0 +1,62 @@
+.todo-form {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.todo-form input {
+  flex: 2;
+  min-width: 200px;
+  padding: 0.8rem 1rem;
+  border: none;
+  border-radius: 12px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  box-shadow: 
+    inset 3px 3px 5px var(--dark-shadow),
+    inset -3px -3px 5px var(--light-shadow);
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.todo-form input:focus {
+  box-shadow: 
+    inset 1px 1px 3px var(--dark-shadow),
+    inset -1px -1px 3px var(--light-shadow);
+}
+
+.todo-form select {
+  flex: 1;
+  min-width: 120px;
+}
+
+.todo-form button {
+  flex: 1;
+  min-width: 100px;
+  background-color: var(--secondary-color);
+  color: white;
+  border: none;
+  padding: 0.8rem 1rem;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 
+    5px 5px 8px var(--dark-shadow),
+    -5px -5px 8px var(--light-shadow);
+  transition: all 0.3s ease;
+}
+
+.todo-form button:hover {
+  background-color: var(--primary-color);
+  transform: translateY(-2px);
+  box-shadow: 
+    7px 7px 10px var(--dark-shadow),
+    -7px -7px 10px var(--light-shadow);
+}
+
+.todo-form button:active {
+  transform: translateY(0);
+  box-shadow: 
+    3px 3px 5px var(--dark-shadow),
+    -3px -3px 5px var(--light-shadow);
+}
