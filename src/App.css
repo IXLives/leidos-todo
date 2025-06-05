@@ -17,7 +17,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .App {
@@ -25,7 +25,7 @@ body {
   max-width: 800px;
   background-color: var(--bg-color);
   border-radius: 20px;
-  padding: 2rem;
+  padding: 1rem;
   box-shadow: 
     8px 8px 15px var(--dark-shadow),
     -8px -8px 15px var(--light-shadow);
@@ -34,22 +34,23 @@ body {
 h1 {
   color: var(--secondary-color);
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   font-weight: 600;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 1.8rem;
 }
 
 .controls {
   display: flex;
-  gap: 1rem;
-  margin-bottom: 2rem;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
   flex-wrap: wrap;
 }
 
 select {
-  flex: 1;
-  min-width: 150px;
-  padding: 0.8rem 1rem;
+  flex: 1 1 100%;
+  min-width: 0;
+  padding: 0.6rem 0.8rem;
   border: none;
   border-radius: 12px;
   background-color: var(--bg-color);
@@ -69,7 +70,7 @@ select:focus {
 }
 
 .reset-btn {
-  padding: 0.8rem 1rem;
+  padding: 0.6rem 0.8rem;
   border: none;
   border-radius: 12px;
   background-color: var(--secondary-color);
@@ -78,6 +79,7 @@ select:focus {
   box-shadow: 
     3px 3px 5px var(--dark-shadow);
   transition: all 0.2s ease;
+  flex: 1 1 100%;
 }
 
 .reset-btn:hover {
@@ -91,4 +93,35 @@ select:focus {
   transform: translateY(0);
   box-shadow: 
     2px 2px 3px var(--dark-shadow);
+}
+
+@media (min-width: 600px) {
+  body {
+    padding: 2rem;
+  }
+  
+  .App {
+    padding: 2rem;
+  }
+  
+  h1 {
+    margin-bottom: 2rem;
+    font-size: 2.2rem;
+  }
+  
+  .controls {
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  select {
+    flex: 1;
+    min-width: 150px;
+    padding: 0.8rem 1rem;
+  }
+  
+  .reset-btn {
+    flex: 1;
+    padding: 0.8rem 1rem;
+  }
 }

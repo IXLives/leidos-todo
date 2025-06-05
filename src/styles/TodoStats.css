@@ -1,8 +1,8 @@
 .todo-stats {
   background-color: var(--bg-color);
   border-radius: 12px;
-  padding: 1.5rem;
-  margin-bottom: 2rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
   box-shadow: 
     inset 3px 3px 5px var(--dark-shadow),
     inset -3px -3px 5px var(--light-shadow);
@@ -11,12 +11,30 @@
 .todo-stats h2 {
   color: var(--secondary-color);
   margin-top: 0;
-  margin-bottom: 1rem;
-  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+  font-size: 1.1rem;
   font-weight: 500;
 }
 
 .todo-stats p {
-  margin: 0.5rem 0;
+  margin: 0.4rem 0;
   color: var(--primary-color);
+  font-size: 0.9rem;
+}
+
+@media (min-width: 600px) {
+  .todo-stats {
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .todo-stats h2 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .todo-stats p {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+  }
 }
