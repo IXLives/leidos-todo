@@ -18,3 +18,23 @@ A sleek todo application with priority management and local storage persistence.
 💾 **Data Persistence**  
 - LocalStorage auto-save
 - Reset to default option
+
+## 🚀 Startup Instructions
+
+### Prerequisites
+- Node.js (v16 or later)
+- npm (v8 or later)
+
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/leidos-todo.git```
+2. Navigate to the project directory
+```bash
+   cd leidos todo```
+3. Install dependencies
+```bash
+   npm run install```
+4. Start program and navigate to localhost:3000
+```bash
+   npm run start```

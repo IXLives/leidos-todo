@@ -89,7 +89,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Todo App</h1>
+      <h1>Leidos Todo</h1>
       
       <div className="controls">
         <select value={filter} onChange={(e) => setFilter(e.target.value)}>
