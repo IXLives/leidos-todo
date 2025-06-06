@@ -34,9 +34,9 @@ A sleek todo application with priority management and local storage persistence.
 ### Installation
 
 1. Clone the repository:
-   ```bash
+```bash
    git clone https://github.com/ixlives/leidos-todo.git
-   ```
+```
 2. Navigate to the project directory
 
 ```bash
